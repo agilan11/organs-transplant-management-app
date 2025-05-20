@@ -137,13 +137,7 @@ const Navber = (props) => {
                           >
                             <span>View Orders</span>
                           </span>
-                          <span
-                            onClick={(e) => history.push("/user/profile")}
-                            className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
-                          >
-  
-                            <span>Account Details</span>
-                          </span>
+
                           
                           <span
                             onClick={(e) => logout()}

@@ -8,10 +8,13 @@ const AdminLayout = ({ children }) => {
   return (
     <Fragment>
       <AdminNavber />
-      <section className="flex bg-gray-100">
+      {/* Make it a column layout instead of a row */}
+      <section className="flex flex-col bg-gray-100">
+        {/* Sidebar will appear on top */}
         <AdminSidebar />
-        <div className="w-full md:w-11/12 h-full">
-          {/* All Children pass from here */}
+
+        {/* Main content */}
+        <div className="w-full h-full">
           {children}
         </div>
       </section>
